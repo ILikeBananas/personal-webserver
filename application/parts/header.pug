@@ -1,0 +1,34 @@
+
+html
+  head
+    meta(charsez="utf-8")
+    link(rel="stylesheet" href="css/main.css")
+    title #{title}
+  body
+    header
+      a(href="/" id="logo")
+        h1 Jonny Hofmann
+        h2 Apprenti informatique
+      nav
+        ul
+          li
+            if title == "index"
+              a(href="/" class="selected") Page d'acceuil
+            else
+              a(href="/") Page d'acceuil
+          li
+            if title == "information"
+              a(href="/info" class="selected") Information
+            else
+              a(href="/info") Information
+          li
+            if title == "projets"
+              a(href="/projets" class="selected") Projets
+            else
+              a(href="/projets") Projets
+          li
+            if title == "contact"
+              a(href="/contact" class="selected") Contact
+            else
+              a(href="/contact") Contact
+    p wow much header

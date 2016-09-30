@@ -1,0 +1,24 @@
+{
+  "name": "webserver",
+  "version": "0.1.0",
+  "description": "personal-webserver",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ILikeBananas/personal-webserver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ILikeBananas/personal-webserver/issues"
+  },
+  "homepage": "https://github.com/ILikeBananas/personal-webserver#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
+  }
+}
