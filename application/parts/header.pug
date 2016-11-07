@@ -3,24 +3,26 @@ html
   head
     meta(charsez="utf-8")
     link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet" href="css/responsive.css")
+    link(href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet")
     title #{title}
   body
     header
       a(href="/" id="logo")
         h1 Jonny Hofmann
-        h2 Apprenti informatique
+        h2 Apprenti en informatique
       nav
         ul
           li
             if title == "index"
               a(href="/" class="selected") Page d'acceuil
             else
-              a(href="/") Page d'acceuil
+              a(href="/") Page d'accueil
           li
             if title == "information"
-              a(href="/info" class="selected") Information
+              a(href="/info" class="selected") Informations
             else
-              a(href="/info") Information
+              a(href="/info") Informations
           li
             if title == "projets"
               a(href="/projets" class="selected") Projets
@@ -31,4 +33,5 @@ html
               a(href="/contact" class="selected") Contact
             else
               a(href="/contact") Contact
+      div(id="header-body")
     p wow much header

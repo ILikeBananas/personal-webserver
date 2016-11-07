@@ -1,9 +1,11 @@
 
 /*jslint node: true */
 "use strict";
+
 var express = require("express");
 var app = express();
-var port = 8080;
+var fs = require("fs");
+var port = 80;
 
 // Set render engine
 app.set("view engine", "pug");
