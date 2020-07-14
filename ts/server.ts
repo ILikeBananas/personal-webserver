@@ -37,25 +37,25 @@ app.use("/css", express.static("application/css"))
 //// Routes
 // Default route
 app.get("/", (req, res) => {
-  res.render("index", {title : "index"})
+  res.render("index", {title : "Index"})
   logger.log(CALLER, "Default page called")
 })
 
 // Info page route
 app.get("/info", (req, res) => {
-  res.render("information", {title: "information"})
+  res.render("information", {title: "Information"})
   logger.log(CALLER, "Info page called")
 })
 
 // Projets page route
 app.get("/projets", (req, res) => {
-  res.render("projets", {title: "projets"})
+  res.render("projets", {title: "Projets"})
   logger.log(CALLER, "Projets page called")
 })
 
 // Contact page route
 app.get("/contact", (req, res) => {
-  res.render("contact", {title: "contact"})
+  res.render("contact", {title: "Contact"})
   logger.log(CALLER, "contact page called")
 })
 
