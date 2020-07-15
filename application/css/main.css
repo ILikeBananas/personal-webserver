@@ -127,7 +127,7 @@ nav .selected {
   border-color: #999;
   height: 50px;
   line-height: 40px;
-  max-width: 250px;
+  max-width: 270px;
   border-radius: 5px;
   margin-bottom: 5px;
   margin-left: 5px;
@@ -153,9 +153,19 @@ nav .selected {
   margin-top: 20px;
 }
 
-.SocialLink {
+/***************
+    Project page
+****************/
+.project {
+  max-width: 600px;
+  margin-bottom: 25px;
+  margin-left: 10px;
 }
 
+.project h2 {
+  font-size: large;
+  text-decoration: underline;
+}
 
 /***************
     Colors
