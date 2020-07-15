@@ -33,6 +33,7 @@ app.set('views', './application/views')
 // Static routes
 app.use("/js", express.static("application/js"))
 app.use("/css", express.static("application/css"))
+app.use("/img", express.static("application/img"))
 
 //// Routes
 // Default route
@@ -60,7 +61,7 @@ app.get("/contact", (req, res) => {
 })
 
 app.get("*", (req, res) => { // 404 error
-  logger.error(CALLER, "Unknown page called")
+  logger.error(CALLER, "Unknown page called : " + req.url)
   res.render("404",
     {title : "ERROR : 404"})
 })

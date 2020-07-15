@@ -106,6 +106,58 @@ nav .selected {
 }
 
 /***************
+    Flaticon
+****************/
+#flaticon {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+#flaticon a {
+  color: #999;
+}
+
+/***************
+    Social media links
+****************/
+.SocialLinkContainer {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #999;
+  height: 50px;
+  line-height: 40px;
+  max-width: 250px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: inline-block;
+}
+.linkIcon {
+  width: 40px;
+  height: 40px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.SocialLinkContainer span {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: top;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.SocialLink {
+}
+
+
+/***************
     Colors
 ****************/
 body {
