@@ -35,12 +35,6 @@ app.use("/js", express.static("application/js"))
 app.use("/css", express.static("application/css"))
 app.use("/img", express.static("application/img"))
 
-/*
-// Favicon route
-app.get("/favicon.ico", (req, res) => {
-  res.send("img/favicon.ico")
-})
-*/
 //// Routes
 // Default route
 app.get("/", (req, res) => {
@@ -66,11 +60,13 @@ app.get("/contact", (req, res) => {
   logger.log(CALLER, "contact page called")
 })
 
+// Error 404 route
 app.get("*", (req, res) => { // 404 error
   logger.error(CALLER, "Unknown page called : " + req.url)
   res.render("404",
     {title : "ERROR : 404"})
 })
+
 // Start server
 app.listen(port);
 logger.logBold(CALLER, "Listenting on port : " + port);
