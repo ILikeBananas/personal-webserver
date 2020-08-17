@@ -5,6 +5,7 @@ html
     link(rel="stylesheet" href="css/main.css")
     link(rel="stylesheet" href="css/responsive.css")
     link(href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet")
+    link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
     title #{title}
   body
     header
@@ -14,22 +15,22 @@ html
       nav
         ul
           li
-            if title == "index"
+            if title == "Index"
               a(href="/" class="selected") Page d'acceuil
             else
               a(href="/") Page d'accueil
           li
-            if title == "information"
+            if title == "Informations"
               a(href="/info" class="selected") Informations
             else
               a(href="/info") Informations
           li
-            if title == "projets"
+            if title == "Projets"
               a(href="/projets" class="selected") Projets
             else
               a(href="/projets") Projets
           li
-            if title == "contact"
+            if title == "Contact"
               a(href="/contact" class="selected") Contact
             else
               a(href="/contact") Contact

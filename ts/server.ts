@@ -35,6 +35,12 @@ app.use("/js", express.static("application/js"))
 app.use("/css", express.static("application/css"))
 app.use("/img", express.static("application/img"))
 
+/*
+// Favicon route
+app.get("/favicon.ico", (req, res) => {
+  res.send("img/favicon.ico")
+})
+*/
 //// Routes
 // Default route
 app.get("/", (req, res) => {
@@ -44,7 +50,7 @@ app.get("/", (req, res) => {
 
 // Info page route
 app.get("/info", (req, res) => {
-  res.render("information", {title: "Information"})
+  res.render("information", {title: "Informations"})
   logger.log(CALLER, "Info page called")
 })
 
