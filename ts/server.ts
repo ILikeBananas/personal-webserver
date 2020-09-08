@@ -19,18 +19,18 @@ import Logger from './Logger'
 const app:express.Application = express()
 
 // Consts
-const port = 8080
+const port = 8080 
 
 // Logger initialization
 const logger: Logger = new Logger()
 const CALLER: string = 'server.ts'
 
 
-// Set render engine
+// Set render engine to pug
 app.set("view engine", "pug")
 app.set('views', './application/views')
 
-// Static routes
+// Routes for static content
 app.use("/js", express.static("application/js"))
 app.use("/css", express.static("application/css"))
 app.use("/img", express.static("application/img"))
@@ -57,14 +57,13 @@ app.get("/projets", (req, res) => {
 // Contact page route
 app.get("/contact", (req, res) => {
   res.render("contact", {title: "Contact"})
-  logger.log(CALLER, "contact page called")
+  logger.log(CALLER, "Contact page called")
 })
 
 // Error 404 route
 app.get("*", (req, res) => { // 404 error
+  res.render("404", {title : "ERROR : 404"})
   logger.error(CALLER, "Unknown page called : " + req.url)
-  res.render("404",
-    {title : "ERROR : 404"})
 })
 
 // Start server
