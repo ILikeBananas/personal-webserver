@@ -7,6 +7,10 @@ body{
   margin: 0 0 0 0;
 }
 
+#content {
+  padding-left: 10px;;
+}
+
 a {
   text-decoration: none;
 }
@@ -16,7 +20,7 @@ img {
 }
 h1 {
 	font-family: 'Changa one', sans-serif;
-	margin: 3% 0 0 0;
+	margin: 3% 0 1% 0;
 	font-size: 1.75em;
 	line-height: 0.8em;
 }
@@ -109,9 +113,7 @@ nav .selected {
     Social media links
 ****************/
 .SocialLinkContainer {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #999;
+  background-color: #DDD;
   height: 50px;
   line-height: 40px;
   max-width: 270px;
@@ -135,7 +137,7 @@ nav .selected {
   line-height: normal;
   display: inline-block;
   vertical-align: top;
-  color: #888;
+  color: #555;
   text-align: center;
   margin-top: 20px;
 }
