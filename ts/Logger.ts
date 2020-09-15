@@ -15,21 +15,21 @@ class Logger {
     // caller : String from which part of the application comes the error
     // message : String of the message to display
     error(caller: string, message: string) {
-        global.console.log(colors.red.bold('[' + caller + '] : ' + message))
+        global.console.log(colors.red.bold(`[${caller}] : ${message}`))
     }
 
     // Logs an important information
     // caller : String from which part of the application comes the important log
     // message : String of the message to display
     logBold(caller: string, message: string) {
-        global.console.log(colors.white.bold('[' + caller + '] : ' + message))
+        global.console.log(colors.white.bold(`[${caller}] : ${message}`))
     }
 
     // Logs normal debug messages
     // caller : String from which part of the application comes the log
     // message : String of the message to display
     log(caller: string, message:string) {
-        global.console.log(colors.white('[' + caller + '] : ' + message))
+        global.console.log(colors.white(`[${caller}] : ${message}`))
     }
 
     // Logs an warning in bold yellow
@@ -37,7 +37,7 @@ class Logger {
     // message : String of the message to display
     //
     warn(caller: string, message: string) {
-        global.console.log(colors.yellow.bold('[' + caller + '] : ' + message))
+        global.console.log(colors.yellow.bold(`[${caller}] : ${message}`))
     }
 }
 

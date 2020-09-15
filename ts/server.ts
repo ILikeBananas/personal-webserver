@@ -63,9 +63,9 @@ app.get("/contact", (req, res) => {
 // Error 404 route
 app.get("*", (req, res) => { // 404 error
   res.render("404", {title : "ERROR : 404"})
-  logger.error(CALLER, "Unknown page called : " + req.url)
+  logger.error(CALLER, `Unknown page called : ${req.url}`)
 })
 
 // Start server
 app.listen(port);
-logger.logBold(CALLER, "Listenting on port : " + port);
+logger.logBold(CALLER, `Listenting on port : ${port}`)
