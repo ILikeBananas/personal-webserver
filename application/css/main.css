@@ -39,9 +39,10 @@ header {
 }
 header h1 {
   font-family: 'Kaushan Script', cursive;
+  font-size: 2em;
 }
 header h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 #logo {
@@ -86,8 +87,9 @@ nav ul li{
 
 nav ul li a {
 	font-weight: bold;
-	padding:15px 10px;
+	padding: 15px 10px;
   color: white;
+  font-size: 1.1em;
 }
 nav .selected {
   text-shadow: 1px 2px  #888;
