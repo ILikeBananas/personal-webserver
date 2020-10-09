@@ -1,0 +1,176 @@
+@import 'colors';
+
+/***************
+    GENERAL
+****************/
+
+body{
+    font-family: "Open sans", sans-serif;
+    margin: 0 0 0 0;
+}
+
+#content {
+    padding-left: 10px;;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+h1 {
+    font-family: 'Changa one', sans-serif;
+    margin: 3% 0 1% 0;
+    font-size: 1.75em;
+    line-height: 0.8em;
+}
+
+h2 {
+    margin: 1% 0 0 0;
+}
+
+/***************
+    Head
+****************/
+
+header {
+    margin: 0 0 30px;
+    padding: 5px 0 0 0;
+    font-family: 'Kaushan Script', cursive;
+
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+#logo {
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 35%;
+}
+
+#header-body {
+    background-color: $lightBlue;
+    height: 5px;
+}
+
+/***************
+    Nav
+****************/
+
+nav {
+    text-align: right;
+    padding: 10px 0;
+    margin: 20px 0 0;
+    color : white;
+    display: inline-block;
+    width: 60%;
+
+    ul{
+        padding: 0;
+        list-style-type: none;
+        margin:0 10px;
+
+    }
+
+    ul li{
+        display: inline;
+    }
+
+    ul li a {
+        font-weight: bold;
+        padding: 15px 10px;
+        color: white;
+        font-size: 1.1em;
+    }
+    .selected {
+        text-shadow: 1px 2px  #888;
+        background-color: $lightBlue;
+        border-radius: 4px;
+        text-decoration-color: $lightBlue;
+    }
+}
+
+/***************
+    Flaticon
+****************/
+#flaticon {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+#flaticon a {
+    color: #999;
+}
+
+/***************
+    Social media links
+****************/
+.SocialLinkContainer {
+    background-color: #DDD;
+    height: 50px;
+    line-height: 40px;
+    max-width: 270px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: inline-block;
+
+    span {
+        line-height: normal;
+        display: inline-block;
+        vertical-align: top;
+        color: #555;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+.linkIcon {
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+
+
+/***************
+    Project page
+****************/
+.project {
+    max-width: 600px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+
+    h2 {
+        font-size: large;
+        text-decoration: underline;
+    }
+}
+
+/***************
+    Colors
+****************/
+body {
+    color: #999;
+}
+header {
+    background: $headerBackgroundColor;
+}
