@@ -9,7 +9,7 @@
     "prestart": "npm run build",
     "start": "node js/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:compile": "node-sass application/sass/ -o application/css"
+    "sass:compile": "node-sass application/scss/ -o application/css"
   },
   "repository": {
     "type": "git",
